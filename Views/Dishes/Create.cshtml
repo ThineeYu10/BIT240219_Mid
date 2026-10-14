@@ -1,0 +1,3 @@
+@model BIT240219_Mid.Models.Dish_BIT240219
+@{ViewData["Title"]="Add a dish";}
+<div class="subhero"><a asp-action="Index" class="back" data-i18n="backMenu">← Back to menu</a><div class="eyebrow" data-i18n="newMenuItem">NEW MENU ITEM</div><h1 data-i18n="createTitle">Make room for<br/><em>something good.</em></h1></div><form asp-action="Create" class="card edit-card"><partial name="_Form" model="Model"/><label class="wide image-input"><span data-i18n="imageUrl">FIRST IMAGE URL · OPTIONAL</span><input name="firstImage" type="url" placeholder="https://..."/></label><div class="form-actions"><a asp-action="Index" class="button ghost" data-i18n="cancel">Cancel</a><button class="button primary" data-i18n="saveDish">Save dish →</button></div></form>
